@@ -10,10 +10,10 @@ RUN rm /etc/nginx/conf.d/default.conf
 
 # Copy your custom configuration file into the container
 # (Ensure you have a 'nginx.conf' in the same directory as this Dockerfile)
-COPY nginx.conf /etc/nginx/conf.d/
+#COPY nginx.conf /etc/nginx/conf.d/
 
 # Copy your static website content to the default Nginx html directory
-COPY ./html /usr/share/nginx/html
+#COPY ./html /usr/share/nginx/html
 
 # Expose port 80 to the outside world
 EXPOSE 80
